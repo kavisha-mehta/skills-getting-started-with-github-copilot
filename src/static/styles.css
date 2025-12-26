@@ -76,7 +76,33 @@ section h3 {
 
 .activity-card ul {
   list-style-type: disc;
-  padding-left: 20px;
+/* Hide bullet points for participant list */
+.participant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.participant-item {
+  background: #e3e3e3;
+  border-radius: 16px;
+  padding: 4px 10px 4px 10px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.98em;
+}
+
+.delete-icon {
+  cursor: pointer;
+  margin-left: 8px;
+  color: #c00;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+.delete-icon:hover {
+  color: #f00;
+}
   margin-top: 10px;
   color: #555;
 }
